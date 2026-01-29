@@ -10,19 +10,18 @@
     --img-height: auto;
 }
 
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: var(--border) #222;
 }
 
 main img {
@@ -38,14 +37,31 @@ p {
     padding: 0;
 }
 
-main {
+header,
+.grid,
+footer {
     max-width: 840px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     width: 20rem;
-    text-align: var(--text-align);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -57,7 +73,7 @@ aside img {
 aside h2 {
     position: absolute;
     top: 3rem;
-    left: 50%x;
+    left: 50%;
     transform: translateX(-50%);
     color: white;
 }
@@ -76,4 +92,9 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }

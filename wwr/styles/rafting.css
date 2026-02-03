@@ -88,8 +88,9 @@ nav li a {
 figcaption {
     display: table-caption;
     caption-side: bottom;
-    text-align: center;
+    margin: 10px;
     color: #025e02;
+    align-items: center;
 }
 
 .socialmedia a {
@@ -160,18 +161,16 @@ article {
     height: auto;
 }
 
-.adventure figure {
+.adventure {
     display: flex;
     justify-content: center;
     text-wrap: nowrap;
-    flex-direction: column;
     align-items: center;
 }
 
-.adventure {
+.adventure figure {
     display: inline-block;
     margin: 0 5px;
-    max-width: 18%;
     height: auto;
 }
 

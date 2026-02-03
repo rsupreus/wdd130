@@ -19,7 +19,7 @@ header {
     align-items: center;
     grid-gap: 5px;
     padding: 20px;
-    background-color: slategray;
+    background-color: #fff;
     height: 20vh;
 }
 
@@ -57,7 +57,7 @@ footer {
     align-items: center;
     text-align: center;
     color: var(--secondary-color);
-    background-color: slategray;
+    background-color: #fff;
 }
 
 footer img {

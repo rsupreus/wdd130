@@ -9,7 +9,7 @@
 
 * {
     margin: 0;
-    padding: 2.5px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -124,7 +124,7 @@ figcaption {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     background-color: white;
     opacity: 0.7;
@@ -166,6 +166,7 @@ article {
     justify-content: center;
     text-wrap: nowrap;
     align-items: center;
+
 }
 
 .adventure figure {

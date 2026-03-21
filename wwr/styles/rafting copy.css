@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #025e02;
+    --secondary-color: #0321b5;
+    --accent1-color: #000000;
+    --accent2-color: #03343f;
+    --heading-font: "Georgia";
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    grid-gap: 5px;
+    padding: 20px;
+    background-color: #fff;
+    height: 20vh;
+} */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #eee;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: #fff;
+} */
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+/* h2 {
+    padding: 10px;
+} */
+
+/* 
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+} */
+
+/* nav li a {
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px 30px;
+    white-space: nowrap;
+} */
+
+/* figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    margin: 10px;
+    color: #025e02;
+    align-items: center;
+} */
+
+.socialmedia a {
+    text-decoration: none;
+    /* justify-content: space-evenly;
+    flex-wrap: nowrap; */
+
+}
+
+.hero {
+    position: relative;
+    max-width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.7;
+    color: var(--accent2-color);
+    top: 75%;
+    padding: 10px 20px;
+}
+
+/* .hero p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+/* .history {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.history p {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.history img {
+    max-width: 30%;
+    height: auto;
+} */
+
+/* 
+.adventure {
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+    align-items: center;
+
+}
+
+.adventure figure {
+    display: inline-block;
+    margin: 0 5px;
+    height: auto;
+}
+
+.adventure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */

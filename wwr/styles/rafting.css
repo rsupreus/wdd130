@@ -41,6 +41,7 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+    color: var(--secondary-color);
 }
 
 footer img {

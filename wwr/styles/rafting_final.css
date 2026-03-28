@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-/* header {
+header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
@@ -21,7 +21,7 @@
     padding: 20px;
     background-color: #fff;
     height: 20vh;
-} */
+}
 
 body {
     font-family: var(--body-font);
@@ -41,6 +41,7 @@ h2 {
     background-color: var(--primary-color);
     text-align: center;
     color: #eee;
+    padding: 10px;
 }
 
 nav,
@@ -51,14 +52,14 @@ article {
     padding: 8px;
 }
 
-/* footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--secondary-color);
     background-color: #fff;
-} */
+}
 
 footer img {
     width: 50px;

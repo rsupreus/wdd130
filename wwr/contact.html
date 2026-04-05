@@ -24,7 +24,7 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
+        <div class="company">
             <h1>Reckless Abandon Rafting Company</h1>
             <article>
                 <p>
@@ -42,55 +42,60 @@
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <form class="form">
-                <div class="quiz-item box">
+                <div class="form-row">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Placeholder">
                 </div>
-                <div class="quiz-item box">
+
+                <div class="form-row">
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder="Placeholder">
                 </div>
-                <div>
+
+                <div class="form-row">
+                    <label class="form-label">Message<br>Purpose</label>
                     <fieldset>
-                        <legend>Message Purpose</legend>
-                        <div class="radio-group-container">
-                            <input type="radio" name="purpose" id="purpose" checked>
-                            <option value="General Inquiry">General Inquiry</option>
-                            <input type="radio" name="question" id="question" checked>
-                            <option value="Reservation Question">Reservation Question</option>
-                            <input type="radio" name="suggestion" id="suggestion" checked>
-                            <option value="Website Suggestion">Website Suggestion</option>
+                        <div class="radio-group">
+                            <label><input type="radio" name="purpose"> General Inquiry</label>
+                            <label><input type="radio" name="purpose"> Reservation Question</label>
+                            <label><input type="radio" name="purpose"> Website Suggestion</label>
                         </div>
                     </fieldset>
                 </div>
-                <div class="quiz-item box">
+
+                <div class="form-row message">
                     <label for="message">Message</label>
-                    <input type="text" id="message" name="message" class="message"
-                      placeholder="Type here">
+                    <textarea placeholder="Type here"></textarea>
                 </div>
-                <div class="quiz-item box">
-                    <label for="subscribe"></label>
-                    <input type="checkbox" name="subscribe" id="subscribe" checked>Please Subscribe
-                    me to the monthly newsletter</input>
+
+                <div class="form-row">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subscribe" id="subscribe" checked>Please
+                        Subscribe
+                        me to the monthly newsletter</input>
+                    </label>
                 </div>
-        </div>
-        <button type="submit">Get in Touch!</button>
-        </form>
+
+                <div class="form-row">
+                    <button type="submit">Get in Touch!</button>
+                </div>
+
+            </form>
         </div>
         <section>
             <h2>We Are Here to Serve You</h2>
             <div class="adventure">
-                <figure>
-                    <img src="images/adv1.jpg" alt="Reckless One">
-                    <figcaption>First Trip</figcaption>
+                <figure class="fig">
+                    <img src="images/employee1.jpg" alt="Reckless One">
+                    <figcaption>Felicia Fancy</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/adv2.jpg" alt="Reckless Two">
-                    <figcaption>Second Trip</figcaption>
+                <figure class="fig">
+                    <img src="images/employee2.jpg" alt="Reckless Two">
+                    <figcaption>Justin Case</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/adv3.jpg" alt="Reckless Three">
-                    <figcaption>Third Trip</figcaption>
+                <figure class="fig">
+                    <img src="images/employee3.jpg" alt="Reckless Three">
+                    <figcaption>Paige Turner</figcaption>
                 </figure>
             </div>
         </section>

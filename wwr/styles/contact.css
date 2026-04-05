@@ -18,7 +18,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     grid-gap: 5px;
-    padding: 20px;
     background-color: #fff;
     height: 20vh;
 }
@@ -35,38 +34,25 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    /* font-family: var(--heading-font);
-    background-color: var(--primary-color);
-    text-align: center;
-    color: #fff; */
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     color: var(--secondary-color);
     background-color: #fff;
+    padding: 30px;
 }
 
 footer img {
     width: 50px;
     height: auto;
+    margin-left: 10px;
 }
 
 h2 {
-    padding: 10px;
+    padding: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -86,19 +72,20 @@ nav li a {
     white-space: nowrap;
 }
 
-figcaption {
-    display: table-caption;
-    caption-side: bottom;
-    margin: 10px;
-    color: #025e02;
-    align-items: center;
+form {
+    width: 425px;
 }
 
-textarea,
-select,
-button {
-    padding: .25rem;
-    width: 300px;
+input[type="text"] {
+    width: 100%;
+    /* max-width: 300px; */
+    height: 30px;
+    padding: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 12px;
 }
 
 button {
@@ -110,6 +97,12 @@ button {
     border: 1px solid rgb(0 0 0 / 10%);
 }
 
+button:hover {
+    background-color: #45a049;
+}
+
+/* Class selectors */
+
 .socialmedia a {
     text-decoration: none;
     justify-content: space-evenly;
@@ -117,111 +110,121 @@ button {
 
 }
 
-.hero {
+.company {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
+.company h1 {
     position: absolute;
-    top: 20px;
-    /* width: 100%;
-    padding: 20px; */
+    top: 5px;
     text-align: center;
     color: #000;
+    margin-bottom: 5px;
 }
 
-.hero article {
+.company article {
     text-emphasis: strong;
+    margin: 15px;
+    padding: 25px;
+
 }
 
-.hero p {
+.company p {
     text-emphasis: strong;
-    padding: 16px;
     text-align: center;
+    line-height: 1.4;
 }
 
 .adventure {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 75px;
     text-wrap: nowrap;
     align-items: center;
-
+    text-align: center;
 }
 
-.adventure figure {
-    display: inline-block;
-    justify-content: space-between;
-    margin: 0 5px;
-    height: auto;
+.fig {
+    flex: 1;
+    text-align: center;
 }
 
 .adventure img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .map {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1rem;
-    gap: 10px;
-
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .map iframe {
-    width: 300px;
-    height: 275px;
+    width: 400px;
+    height: 365px;
     border: none;
-}
-
-.quiz-item {
-    border: none;
-    padding-bottom: 10px;
-}
-
-.label-spacing {
-    margin-right: 20px;
-    padding-right: 20px;
-}
-
-.message {
-    padding: 1rem;
-    width: 350px;
 }
 
 fieldset {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr fr;
     border: none;
     padding-bottom: 5px;
     width: 350px;
 }
 
-/* legend {
-    white-space: normal;
-} */
-
-.radio-group-container {
+.form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 100px 1fr;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-/* .radio-option input[type="radio"] {
-    margin-right: 0.5em;
-} */
+.message textarea {
+    grid-column: span 4;
+    width: 100%;
+    box-sizing: border-box;
+    height: 75px;
+    padding: 10px;
+}
 
-/* .radio > div {
-    display: contents;
-} */
+.form-label {
+    align-self: center;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-row textarea {
+    align-self: start;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.form-row button {
+    grid-column: span 2;
+    width: 100%;
+    padding: 10px;
+}

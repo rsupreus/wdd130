@@ -126,14 +126,12 @@ button:hover {
 }
 
 .company article {
-    text-emphasis: strong;
     margin: 15px;
     padding: 25px;
 
 }
 
 .company p {
-    text-emphasis: strong;
     text-align: center;
     line-height: 1.4;
 }
@@ -175,7 +173,7 @@ button:hover {
 
 fieldset {
     display: grid;
-    grid-template-columns: 1fr fr;
+    grid-template-columns: 1fr 1fr;
     border: none;
     padding-bottom: 5px;
     width: 350px;

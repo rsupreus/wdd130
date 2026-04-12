@@ -25,6 +25,11 @@ header {
     margin-bottom: 30px;
 }
 
+header img {
+    max-height: 120px;
+    width: auto;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);

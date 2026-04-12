@@ -24,6 +24,12 @@ header {
     height: 20vh;
 }
 
+header img {
+    display: block;
+    margin: 0 auto 10px auto;
+    max-width: 150px;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -37,11 +43,6 @@ footer {
     margin: 0 auto;
     border-radius: 0;
 }
-
-/* main {
-    background-color: #f0f7f8;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-} */
 
 main {
     background-color: #e6f2f3;

@@ -21,13 +21,14 @@ header {
     grid-gap: 5px;
     padding: 20px;
     background-color: var(--accent2-color);
-    height: 20vh;
+    min-height: 120px;
+    height: auto;
     margin-bottom: 30px;
 }
 
 header img {
-    max-height: 120px;
-    width: auto;
+    max-width: 175px;
+    height: auto;
 }
 
 body {
@@ -58,7 +59,6 @@ p,
 article {
     margin: 16px;
     padding: 8px;
-    color: var(--secondary-color);
 }
 
 h1 {
@@ -138,7 +138,6 @@ footer img {
     padding: 0;
     background-color: #fff;
     opacity: 0.9;
-    color: var(--accent2-color);
     width: 85%;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -173,17 +172,22 @@ footer img {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+
 }
 
 .history p {
     flex: 1;
     border: 1px solid #fff;
     text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    color: var(--accent2-color);
 }
 
 .history img {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .adventure {
@@ -247,9 +251,7 @@ button:hover {
 }
 
 .company article {
-    margin: 15px;
-    padding: 25px;
-
+    margin: 10px;
 }
 
 .company p {
@@ -264,6 +266,7 @@ button:hover {
     text-wrap: nowrap;
     align-items: center;
     text-align: center;
+    margin: 10px;
 }
 
 .fig {
@@ -284,6 +287,7 @@ button:hover {
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
+    margin: 10px 10px;
 }
 
 .map iframe {
@@ -358,6 +362,7 @@ fieldset {
     color: #fff;
     padding: 40px 20px;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .cta-bg {
@@ -368,7 +373,6 @@ fieldset {
     height: 100%;
     object-fit: cover;
     opacity: 0.3;
-    /* 🔥 transparency */
     z-index: 0;
 }
 
@@ -587,5 +591,5 @@ fieldset {
 }
 
 .newsletter button:hover {
-    background-color: #014d01;
+    background-color: var(--accent2-color);
 }
